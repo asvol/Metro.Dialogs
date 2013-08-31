@@ -10,18 +10,26 @@ This user control lib implement some dialogs at metro style:
 
 Based on MahApps.Metro and Caliburn.Micro
 
-![main](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/main.png)
-![about](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/about.png)
-![splash](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/splash.png)
-![select](https://github.com/ErwinCat/Metro.Dialogs/blob/master/doc/screenshots/select.png)
+## About box
 
+![about](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/about.png)
+
+## Splash screen
+![splash](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/splash.png)
+
+## Select item dialog
+![select](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/select.png)
+
+## Message box dialogs
 ![error](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/error.png)
 ![info](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/info.png)
 ![askyesno](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/ask-yes-no.png)
 ![warn](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/warn.png)
-![withInfoButton](https://github.com/ErwinCat/Metro.Dialogs/blob/master/doc/screenshots/withInfoButton.png)
-![customButton](https://github.com/ErwinCat/Metro.Dialogs/blob/master/doc/screenshots/customButton.png)
+![withInfoButton](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/withInfoButton.png)
+![customButton](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/customButton.png)
 
+## Example app
+![main](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/main.png)
 
 
 
