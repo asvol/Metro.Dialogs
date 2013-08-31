@@ -10,6 +10,8 @@ This user control lib implement some dialogs at metro style:
 
 Based on MahApps.Metro and Caliburn.Micro
 
+icons:http://modernuiicons.com/
+
 ```csharp
 //create by ctor
 var svc = new WindowDialogs()
