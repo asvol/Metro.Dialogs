@@ -21,11 +21,17 @@ Based on MahApps.Metro and Caliburn.Micro
 ![select](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/select.png)
 
 ## Message box dialogs
+### Error
 ![error](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/error.png)
+### Info
 ![info](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/info.png)
-![askyesno](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/ask-yes-no.png)
+### Warn
 ![warn](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/warn.png)
+### Ask user yes/no
+![askyesno](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/ask-yes-no.png)
+### Dialog with button info
 ![withInfoButton](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/withInfoButton.png)
+### Dialog with custom buttons
 ![customButton](https://raw.github.com/ErwinCat/Metro.Dialogs/master/doc/screenshots/customButton.png)
 
 ## Example app
