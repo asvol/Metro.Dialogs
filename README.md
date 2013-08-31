@@ -9,3 +9,4 @@ This user control lib implement some dialogs at metro style:
  * Splash screen dialog
 
 Based on MahApps.Metro and Caliburn.Micro
+[[/doc/screenshot/main.png]]
