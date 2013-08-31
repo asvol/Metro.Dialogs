@@ -10,3 +10,4 @@ This user control lib implement some dialogs at metro style:
 
 Based on MahApps.Metro and Caliburn.Micro
 
+Screenshots https://github.com/ErwinCat/Metro.Dialogs.wiki.git
