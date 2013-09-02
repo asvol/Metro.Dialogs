@@ -138,4 +138,10 @@
   <data name="DialogServiceExtentios_YesButtonText_Yes" xml:space="preserve">
     <value>Yes</value>
   </data>
+  <data name="WindowsDialogs_SelectButtonText_Select">
+    <value xml:space="preserve">Select</value>
+  </data>
+  <data name="WindowsDialogs_FilterLabel_Filter">
+    <value xml:space="preserve">Filter...</value>
+  </data>
 </root>

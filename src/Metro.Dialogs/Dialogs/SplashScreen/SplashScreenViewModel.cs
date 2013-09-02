@@ -11,7 +11,7 @@ namespace Metro.Dialogs
         private string _appSubTitle;
         private string _version;
         private string _organizationName;
-        private string _allRightReserved;
+        private string _allRightsReserved;
         private string _message;
 
         public string AppTitle
@@ -58,14 +58,14 @@ namespace Metro.Dialogs
             }
         }
 
-        public string AllRightReserved
+        public string AllRightsReserved
         {
-            get { return _allRightReserved; }
+            get { return _allRightsReserved; }
             set
             {
-                if (value == _allRightReserved) return;
-                _allRightReserved = value;
-                NotifyOfPropertyChange(() => AllRightReserved);
+                if (value == _allRightsReserved) return;
+                _allRightsReserved = value;
+                NotifyOfPropertyChange(() => AllRightsReserved);
             }
         }
 

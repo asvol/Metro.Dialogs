@@ -48,9 +48,9 @@
 
 
         <TextBlock Grid.Row="3" Margin="20,10,0,10" FontSize="10" Foreground="#FF999999">
-        	<TextBlock x:Name="OrganizationName" Text="© Organization'" Foreground="#FF999999"/>
+        	<TextBlock x:Name="OrganizationName" Text="{Binding OrganizationName}" Foreground="#FF999999"/>
         	<LineBreak/>
-        	<TextBlock x:Name="AllRightReserved" Text="All rights reserver" Foreground="#FF999999"/>
+        	<TextBlock x:Name="AllRightsReserved" Text="{Binding AllRightsReserved}" Foreground="#FF999999"/>
         	</TextBlock>
 
         <Border Grid.Row="4" Background="#FF252526">

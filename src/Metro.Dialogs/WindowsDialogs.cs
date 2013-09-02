@@ -17,8 +17,9 @@ namespace Metro.Dialogs
         public static readonly string OkButtonText = Resources.DialogServiceExtentios_OkButtonText_Ok;
         public static readonly string CancelButtonText = Resources.DialogServiceExtentios_CancelButtonText_Cancel;
         private static readonly string ExceptionDialogText = Resources.DialogServiceExtentios_ExceptionDialogText_Additional;
-        private static readonly string SelectButtonText = "Select";
-        private static readonly string FilterLabel = "Filter...";
+        private static readonly string SelectButtonText = Resources.WindowsDialogs_SelectButtonText_Select;
+        private static readonly string FilterLabel = Resources.WindowsDialogs_FilterLabel_Filter;
+        private static readonly string AllRightsReserved = "All rights reserved";
 
 
         [ImportingConstructor]
@@ -29,18 +30,20 @@ namespace Metro.Dialogs
 
         #region splash screen
 
-        public void OpenSplashScreen(string appTitle,string version,string appSubTitle,string organizationName, string allRightReserved = null ,string message = null)
+        public SplashScreenViewModel OpenSplashScreen(string appTitle, string version, string appSubTitle, string organizationName, string allRightReserved = null, string message = null)
         {
             var vm = new SplashScreenViewModel
                          {
                              DisplayName = appTitle,
+                             Version = version,
                              AppTitle = appTitle,
                              AppSubTitle = appSubTitle,
                              OrganizationName = organizationName,
-                             AllRightReserved = allRightReserved,
+                             AllRightsReserved = allRightReserved ?? AllRightsReserved,
                              Message = message,
                          };
-            _windowManager.ShowDialog(vm);
+            _windowManager.ShowWindow(vm);
+            return vm;
         }
 
         #endregion

@@ -11,7 +11,7 @@ namespace Metro.Dialogs
         ActionViewModel ShowAboutBox(string appName, string appVersion, string appAbout,
                                      params ActionViewModel[] actions);
 
-        void OpenSplashScreen(string appTitle, string version, string appSubTitle, string organizationName,
+        SplashScreenViewModel OpenSplashScreen(string appTitle, string version, string appSubTitle, string organizationName,
                               string allRightReserved = null, string message = null);
 
         object ShowMessageBox(string caption, string message, MessageBoxIconType icon, MessageBoxHelpButton helpButton,

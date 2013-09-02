@@ -122,5 +122,23 @@ namespace Metro.Dialogs.Properties {
                 return ResourceManager.GetString("DialogServiceExtentios_YesButtonText_Yes", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filter....
+        /// </summary>
+        public static string WindowsDialogs_FilterLabel_Filter {
+            get {
+                return ResourceManager.GetString("WindowsDialogs_FilterLabel_Filter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select.
+        /// </summary>
+        public static string WindowsDialogs_SelectButtonText_Select {
+            get {
+                return ResourceManager.GetString("WindowsDialogs_SelectButtonText_Select", resourceCulture);
+            }
+        }
     }
 }
