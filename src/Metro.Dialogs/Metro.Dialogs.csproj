@@ -58,15 +58,20 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\InverseBooleanConverter.cs" />
+    <Compile Include="Converters\InverseBooleanToVisibilityConverter.cs" />
+    <Compile Include="Dialogs\LoginDialog\LoginDialogResult.cs" />
+    <Compile Include="Dialogs\LoginDialog\LoginDialogViewModel.cs" />
     <Compile Include="Dialogs\Select\SelectItem.cs" />
     <Compile Include="Dialogs\Select\SelectItemDialogViewModel.cs" />
     <Compile Include="Dialogs\Select\SelectItemViewModel.cs" />
+    <Compile Include="Controls\ProgressControl\ProgressControl.cs" />
     <Compile Include="WindowsDialogs.cs" />
     <Page Include="Dialogs\AboutBox\AboutBoxView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="Common\ActionViewModel.cs" />
+    <Compile Include="Dialogs\AboutBox\ActionViewModel.cs" />
     <Compile Include="Dialogs\AboutBox\AboutBoxViewModel.cs" />
     <Compile Include="Dialogs\MessageBox\MessageBoxButton.cs" />
     <Compile Include="Dialogs\MessageBox\MessageBoxButtonViewModel.cs" />
@@ -75,6 +80,10 @@
     <Compile Include="Dialogs\MessageBox\MessageBoxViewModel.cs" />
     <Compile Include="Dialogs\SplashScreen\SplashScreenViewModel.cs" />
     <Compile Include="IWindowsDialogs.cs" />
+    <Page Include="Dialogs\LoginDialog\LoginDialogView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Dialogs\MessageBox\MessageBoxView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -86,6 +95,14 @@
     <Page Include="Dialogs\Select\SelectItemDialogView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ProgressControl\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

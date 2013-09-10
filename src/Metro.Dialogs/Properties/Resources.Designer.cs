@@ -124,11 +124,56 @@ namespace Metro.Dialogs.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All rights reserved.
+        /// </summary>
+        public static string WindowsDialogs_AllRightsReserved_All_rights_reserved {
+            get {
+                return ResourceManager.GetString("WindowsDialogs_AllRightsReserved_All_rights_reserved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Filter....
         /// </summary>
         public static string WindowsDialogs_FilterLabel_Filter {
             get {
                 return ResourceManager.GetString("WindowsDialogs_FilterLabel_Filter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter.
+        /// </summary>
+        public static string WindowsDialogs_LoginButtonText_Enter {
+            get {
+                return ResourceManager.GetString("WindowsDialogs_LoginButtonText_Enter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        public static string WindowsDialogs_LoginDialogPasswordLabel_Password {
+            get {
+                return ResourceManager.GetString("WindowsDialogs_LoginDialogPasswordLabel_Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Register.
+        /// </summary>
+        public static string WindowsDialogs_LoginDialogTitle_Register {
+            get {
+                return ResourceManager.GetString("WindowsDialogs_LoginDialogTitle_Register", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        public static string WindowsDialogs_LoginDialogUserNameLabel_Login {
+            get {
+                return ResourceManager.GetString("WindowsDialogs_LoginDialogUserNameLabel_Login", resourceCulture);
             }
         }
         

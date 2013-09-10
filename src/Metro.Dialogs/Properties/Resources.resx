@@ -144,4 +144,19 @@
   <data name="WindowsDialogs_FilterLabel_Filter">
     <value xml:space="preserve">Filter...</value>
   </data>
+  <data name="WindowsDialogs_AllRightsReserved_All_rights_reserved">
+    <value xml:space="preserve">All rights reserved</value>
+  </data>
+  <data name="WindowsDialogs_LoginDialogTitle_Register">
+    <value xml:space="preserve">Register</value>
+  </data>
+  <data name="WindowsDialogs_LoginButtonText_Enter">
+    <value xml:space="preserve">Enter</value>
+  </data>
+  <data name="WindowsDialogs_LoginDialogUserNameLabel_Login">
+    <value xml:space="preserve">Login</value>
+  </data>
+  <data name="WindowsDialogs_LoginDialogPasswordLabel_Password">
+    <value xml:space="preserve">Password</value>
+  </data>
 </root>

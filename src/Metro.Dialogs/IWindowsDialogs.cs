@@ -6,6 +6,10 @@ namespace Metro.Dialogs
 {
     public interface IWindowsDialogs
     {
+
+
+        LoginDialogResult OpenLoginDialog(string login);
+
         bool? ShowAboutBox(string appName, string appVersion, string appAbout);
 
         ActionViewModel ShowAboutBox(string appName, string appVersion, string appAbout,

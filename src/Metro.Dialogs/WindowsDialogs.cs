@@ -19,7 +19,12 @@ namespace Metro.Dialogs
         private static readonly string ExceptionDialogText = Resources.DialogServiceExtentios_ExceptionDialogText_Additional;
         private static readonly string SelectButtonText = Resources.WindowsDialogs_SelectButtonText_Select;
         private static readonly string FilterLabel = Resources.WindowsDialogs_FilterLabel_Filter;
-        private static readonly string AllRightsReserved = "All rights reserved";
+        private static readonly string AllRightsReserved = Resources.WindowsDialogs_AllRightsReserved_All_rights_reserved;
+        private static readonly string LoginDialogTitle = Resources.WindowsDialogs_LoginDialogTitle_Register;
+        private static readonly string LoginDialogMessage = Resources.WindowsDialogs_LoginDialogTitle_Register;
+        private static readonly string LoginButtonText = Resources.WindowsDialogs_LoginButtonText_Enter;
+        private static readonly string LoginDialogUserNameLabel = Resources.WindowsDialogs_LoginDialogUserNameLabel_Login;
+        private static readonly string LoginDialogPasswordLabel = Resources.WindowsDialogs_LoginDialogPasswordLabel_Password;
 
 
         [ImportingConstructor]
@@ -27,6 +32,25 @@ namespace Metro.Dialogs
         {
             _windowManager = windowManager;
         }
+
+        #region login
+
+        public LoginDialogResult OpenLoginDialog(string login)
+        {
+            var vm = new LoginDialogViewModel
+            {
+                Login = login,
+                CancelButtonText = CancelButtonText,
+                DisplayName = LoginDialogTitle,
+                UserNameText = LoginDialogUserNameLabel,
+                LoginButtonText = LoginButtonText,
+                MessageText = LoginDialogMessage,
+                PasswordText = LoginDialogPasswordLabel
+            };
+            return _windowManager.ShowDialog(login) == true ? new LoginDialogResult { Login = vm.Login, Password = vm.Password } : null;
+        }
+
+        #endregion
 
         #region splash screen
 
@@ -47,7 +71,6 @@ namespace Metro.Dialogs
         }
 
         #endregion
-
 
         #region About box
 
@@ -160,8 +183,6 @@ namespace Metro.Dialogs
 
         #endregion
 
-        
-
         #region file dialogs
 
         public string ShowOpenFileDialog( string caption, string filter = null, string initialDirectory = null)
@@ -223,7 +244,6 @@ namespace Metro.Dialogs
 
         
         #endregion
-
 
         #region Select item/items
 

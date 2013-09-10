@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.Composition;
+using System.Reactive.Linq;
 using Caliburn.Micro;
 
 namespace Metro.Dialogs.Example
@@ -8,6 +9,8 @@ namespace Metro.Dialogs.Example
     public class ShellViewModel : Screen, IShell
     {
         private readonly IWindowsDialogs _windowsDialogs;
+        private bool _isBusy;
+        private double _busyProgress;
 
         [ImportingConstructor]
         public ShellViewModel(IWindowsDialogs windowsDialogs)
@@ -91,6 +94,41 @@ namespace Metro.Dialogs.Example
             _windowsDialogs.SelectItemDialog("Caption", "Message", true,
                 new SelectItem("DisplayName 1", "Description 1", 1,_=>_ == "1"),
                 new SelectItem("DisplayName 2", "Description 2", 2, _ => _ == "2"));
+        }
+
+        public bool IsBusy
+        {
+            get { return _isBusy; }
+            set
+            {
+                if (value.Equals(_isBusy)) return;
+                _isBusy = value;
+                NotifyOfPropertyChange(() => IsBusy);
+            }
+        }
+
+        public double BusyProgress
+        {
+            get { return _busyProgress; }
+            set
+            {
+                if (value.Equals(_busyProgress)) return;
+                _busyProgress = value;
+                NotifyOfPropertyChange(() => BusyProgress);
+            }
+        }
+
+        public async void SetBusy()
+        {
+            BusyProgress = 0;
+            IsBusy = true;
+            for (int i = 0; i < 5; i++)
+            {
+                await Observable.Timer(TimeSpan.FromSeconds(1));
+                BusyProgress += 20;    
+            }
+            await Observable.Timer(TimeSpan.FromSeconds(1));
+            IsBusy = false;
         }
     }
 
