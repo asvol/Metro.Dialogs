@@ -47,7 +47,7 @@ namespace Metro.Dialogs
                 MessageText = LoginDialogMessage,
                 PasswordText = LoginDialogPasswordLabel
             };
-            return _windowManager.ShowDialog(login) == true ? new LoginDialogResult { Login = vm.Login, Password = vm.Password } : null;
+            return _windowManager.ShowDialog(vm) == true ? new LoginDialogResult { Login = vm.Login, Password = vm.Password } : null;
         }
 
         #endregion

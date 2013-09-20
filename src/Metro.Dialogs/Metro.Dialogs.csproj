@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Controls\Breadcrumb\Breadcrumb.cs" />
     <Compile Include="Controls\Breadcrumb\BreadcrumbActionViewModel.cs" />
+    <Compile Include="Controls\ProgressControl\ProgressViewModel.cs" />
     <Compile Include="Converters\InverseBooleanConverter.cs" />
     <Compile Include="Converters\InverseBooleanToVisibilityConverter.cs" />
     <Compile Include="Dialogs\LoginDialog\LoginDialogResult.cs" />

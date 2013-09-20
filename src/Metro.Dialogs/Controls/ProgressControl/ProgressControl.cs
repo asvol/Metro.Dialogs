@@ -4,7 +4,6 @@ using System.Windows.Shapes;
 
 namespace Metro.Dialogs.Controls.ProgressControl
 {
-    
     public class ProgressControl : ContentControl
     {
         static ProgressControl()

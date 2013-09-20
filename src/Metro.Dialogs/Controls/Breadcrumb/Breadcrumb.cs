@@ -9,6 +9,8 @@ using System.Windows.Markup;
 
 namespace Metro.Dialogs.Controls
 {
+    [DefaultProperty("Items")]
+    [ContentProperty("Items")]
     public class Breadcrumb:ContentControl
     {
         static Breadcrumb()
