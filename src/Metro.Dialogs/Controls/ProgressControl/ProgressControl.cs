@@ -4,7 +4,7 @@ using System.Windows.Shapes;
 
 namespace Metro.Dialogs.Controls.ProgressControl
 {
-    [StyleTypedProperty(Property = "OverlayStyle", StyleTargetType = typeof(Rectangle))]
+    
     public class ProgressControl : ContentControl
     {
         static ProgressControl()

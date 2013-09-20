@@ -5,7 +5,8 @@
 
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/Metro.Dialogs;component/Controls/ProgressControl/Generic.xaml" />
+        <ResourceDictionary Source="/Metro.Dialogs;component/Controls/ProgressControl/ProgressControl.xaml" />
+        <ResourceDictionary Source="/Metro.Dialogs;component/Controls/Breadcrumb/Breadcrumb.xaml" />
        
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

@@ -2,6 +2,7 @@
 using System.ComponentModel.Composition;
 using System.Reactive.Linq;
 using Caliburn.Micro;
+using Metro.Dialogs.Controls;
 
 namespace Metro.Dialogs.Example
 {
@@ -16,7 +17,10 @@ namespace Metro.Dialogs.Example
         public ShellViewModel(IWindowsDialogs windowsDialogs)
         {
             _windowsDialogs = windowsDialogs;
+            InitBreadcrumbs();
         }
+
+       
 
         public void OpenSplashScreen()
         {
@@ -130,6 +134,25 @@ namespace Metro.Dialogs.Example
             await Observable.Timer(TimeSpan.FromSeconds(1));
             IsBusy = false;
         }
+
+
+
+        #region Breadcrumb
+
+        private void InitBreadcrumbs()
+        {
+            Breadcrumbs = new BindableCollection<BreadcrumbActionViewModel>
+                              {
+                                  new BreadcrumbActionViewModel(() => _windowsDialogs.ShowInfo("Click", "Food"))
+                                      {CanExecute = true, DisplayName = "Food"},
+                                  new BreadcrumbActionViewModel(() => _windowsDialogs.ShowInfo("Click", "Fruit"))
+                                      {CanExecute = true, DisplayName = "Fruit"}
+                              };
+        }
+
+        public BindableCollection<BreadcrumbActionViewModel> Breadcrumbs { get; set; }
+
+        #endregion
     }
 
     public interface IShell

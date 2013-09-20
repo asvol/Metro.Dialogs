@@ -4,7 +4,8 @@
                       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
                       xmlns:cal="http://www.caliburnproject.org"
                       xmlns:ProgressControl="clr-namespace:Metro.Dialogs.Controls.ProgressControl;assembly=Metro.Dialogs"
-                      Title="ShellView" Height="429" Width="758" ShowTitleBar="False">
+                      xmlns:Controls1="clr-namespace:Metro.Dialogs.Controls;assembly=Metro.Dialogs"
+                      xmlns:System="clr-namespace:System;assembly=mscorlib" Title="ShellView" Height="429" Width="758" ShowTitleBar="False">
     <Controls:MetroWindow.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -44,6 +45,9 @@
                 <TextBlock DockPanel.Dock="Left" Text="Metro.Dialogs examples" FontFamily="{DynamicResource HeaderFontFamily}" FontSize="{DynamicResource SubHeaderFontSize}"/>
             </DockPanel>
             <WrapPanel Grid.Row="1" Margin="20,10,10,10">
+                <GroupBox Header="Breadcrumb">
+                    <Controls1:Breadcrumb Items="{Binding Breadcrumbs}" Separator="/" />
+                </GroupBox>
                 <GroupBox Header="AboutBox">
                     <WrapPanel>
                         <Button Content="Simple" x:Name="OpenAboutSimple" Margin="5"/>
