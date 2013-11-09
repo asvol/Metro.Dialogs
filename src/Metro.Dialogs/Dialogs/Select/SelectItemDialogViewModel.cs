@@ -1,11 +1,11 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Windows.Data;
 using System.Windows.Input;
 using Caliburn.Micro;
 
 namespace Metro.Dialogs
 {
-    public class SelectItemDialogViewModel:Conductor<SelectItemViewModel>.Collection.OneActive
+    public class SelectItemDialogViewModel :Conductor<SelectItemViewModel>.Collection.OneActive
     {
         private SelectItemViewModel _selectedItem;
         private string _message;
@@ -14,6 +14,7 @@ namespace Metro.Dialogs
         private string _filterText;
         private bool _filterVisible;
         private string _filterLabel;
+        private bool hasSelect;
 
         public string Message
         {
@@ -31,7 +32,7 @@ namespace Metro.Dialogs
             get { return _selectedItem; }
             set
             {
-                if (Equals(value, _selectedItem)) return;
+                if (hasSelect || Equals(value, _selectedItem)) return;
                 _selectedItem = value;
                 NotifyOfPropertyChange(() => SelectedItem);
             }
@@ -102,7 +103,9 @@ namespace Metro.Dialogs
 
         public void Select()
         {
-            TryClose(true);
+            hasSelect = true;
+            TryClose(hasSelect);
+           
         }
 
         public void Cancel()
