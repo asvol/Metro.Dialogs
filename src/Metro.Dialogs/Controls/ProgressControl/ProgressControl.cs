@@ -1,8 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Shapes;
 
-namespace Metro.Dialogs.Controls.ProgressControl
+namespace Metro.Dialogs
 {
     public class ProgressControl : ContentControl
     {

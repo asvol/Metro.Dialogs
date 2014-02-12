@@ -7,7 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Markup;
 
 
-namespace Metro.Dialogs.Controls
+namespace Metro.Dialogs
 {
     [DefaultProperty("Items")]
     [ContentProperty("Items")]

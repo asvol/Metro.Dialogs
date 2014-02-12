@@ -1,7 +1,7 @@
 using Caliburn.Micro;
 using Action = System.Action;
 
-namespace Metro.Dialogs.Controls
+namespace Metro.Dialogs
 {
     public class BreadcrumbActionViewModel : PropertyChangedBase, IHaveDisplayName
     {

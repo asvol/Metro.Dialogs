@@ -16,29 +16,7 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Control.Resources>
-    <Grid>
-        
-        
-        <ItemsControl VerticalAlignment="Top">
-            <ItemsControl.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <StackPanel Orientation="Horizontal"/>
-                </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <Button Style="{DynamicResource ChromelessButtonStyle}">
-                            <TextBlock FontFamily="{DynamicResource HeaderFontFamily}" FontSize="{DynamicResource SubHeaderFontSize}" Text="{Binding}"/>
-                        </Button>
-                        <TextBlock FontFamily="{DynamicResource HeaderFontFamily}" FontSize="{DynamicResource SubHeaderFontSize}" Foreground="{DynamicResource GrayBrush1}" Text="/" Margin="3,0"/>
-                    </StackPanel>
-                    
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-            <System:String>Food</System:String>
-            <System:String>Fruit</System:String>
-            <System:String>Apple</System:String>
-        </ItemsControl>    
-    </Grid>
+    <TreeView>
+        <TreeViewItem Header="asdasd"/>
+    </TreeView>
 </UserControl>

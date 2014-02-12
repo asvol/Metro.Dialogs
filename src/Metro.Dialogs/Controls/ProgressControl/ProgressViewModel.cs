@@ -1,6 +1,6 @@
 using Caliburn.Micro;
 
-namespace Metro.Dialogs.Controls.ProgressControl
+namespace Metro.Dialogs
 {
     public class ProgressViewModel : PropertyChangedBase
     {

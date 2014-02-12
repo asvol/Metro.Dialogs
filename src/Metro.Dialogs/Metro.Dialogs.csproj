@@ -70,7 +70,7 @@
     <Compile Include="Dialogs\Select\SelectItemViewModel.cs" />
     <Compile Include="Controls\ProgressControl\ProgressControl.cs" />
     <Compile Include="WindowsDialogs.cs" />
-    <Page Include="Controls\Breadcrumb\Breadcrumb.xaml">
+    <Page Include="Controls\Breadcrumb\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -107,7 +107,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Controls\ProgressControl\ProgressControl.xaml">
+    <Page Include="Controls\ProgressControl\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
