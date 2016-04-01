@@ -11,7 +11,7 @@ namespace Metro.Dialogs
 {
     [DefaultProperty("Items")]
     [ContentProperty("Items")]
-    public class Breadcrumb:ContentControl
+    public class Breadcrumb : ContentControl
     {
         static Breadcrumb()
         {

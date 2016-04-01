@@ -6,16 +6,20 @@ using System.ComponentModel.Composition.Primitives;
 using System.Linq;
 using System.Reflection;
 using Caliburn.Micro;
+using System.Windows;
 
 namespace Metro.Dialogs.Example
 {
-    public class MefBootstrapper : Bootstrapper<IShell>
+    public class MefBootstrapper : BootstrapperBase////Bootstrapper<IShell>
     {
         private CompositionContainer _container;
 
+        public MefBootstrapper() { 
+            Initialize(); 
+        }
+
         protected override void Configure()
         {
-
             var catalog =
                 new AggregateCatalog(
                     AssemblySource.Instance.Select(x => new AssemblyCatalog(x)).OfType<ComposablePartCatalog>());
@@ -60,6 +64,11 @@ namespace Metro.Dialogs.Example
         protected override void BuildUp(object instance)
         {
             _container.SatisfyImportsOnce(instance);
+        }
+
+        protected override void OnStartup(object sender, StartupEventArgs e)
+        {
+            DisplayRootViewFor<IShell>();
         }
     }
 }

@@ -3,13 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
                       xmlns:cal="http://www.caliburnproject.org"
-                      xmlns:ProgressControl="clr-namespace:Metro.Dialogs.Controls.ProgressControl;assembly=Metro.Dialogs"
-                      xmlns:Controls1="clr-namespace:Metro.Dialogs.Controls;assembly=Metro.Dialogs"
+                      xmlns:ProgressControl="clr-namespace:Metro.Dialogs;assembly=Metro.Dialogs"
+                      xmlns:Controls1="clr-namespace:Metro.Dialogs;assembly=Metro.Dialogs"
                       xmlns:System="clr-namespace:System;assembly=mscorlib" Title="ShellView" Height="429" Width="758" ShowTitleBar="False">
     <Controls:MetroWindow.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colours.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
@@ -20,7 +20,7 @@
             <SolidColorBrush x:Key="ProgressBarTrackBrush" Color="#59FFFFFF"/>
         </ResourceDictionary>
     </Controls:MetroWindow.Resources>
-    <Controls:MetroWindow.WindowCommands>
+    <Controls:MetroWindow.RightWindowCommands>
         <Controls:WindowCommands>
             <Button x:Name="OpenAbout" cal:Message.Attach="OpenAbout" Content="Help" Focusable="False"/>
             <Button x:Name="OpenLogin" cal:Message.Attach="OpenLogin" Focusable="False">
@@ -30,7 +30,7 @@
                 </StackPanel>
             </Button>
         </Controls:WindowCommands>
-    </Controls:MetroWindow.WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
     <ProgressControl:ProgressControl IsBusy="{Binding IsBusy}" Value="{Binding BusyProgress}" Max="100" Min="0" HeaderText="Loading..." ContentText="Please wait">
         <Grid>
             <Grid.RowDefinitions>

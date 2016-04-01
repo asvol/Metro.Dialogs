@@ -2,7 +2,7 @@
 using System.ComponentModel.Composition;
 using System.Reactive.Linq;
 using Caliburn.Micro;
-using Metro.Dialogs.Controls;
+using Metro.Dialogs;//.Controls;
 
 namespace Metro.Dialogs.Example
 {
