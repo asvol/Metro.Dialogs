@@ -10,7 +10,7 @@
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colours.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseDark.xaml" />
@@ -39,11 +39,11 @@
             <BooleanToVisibilityConverter x:Key="boolToVisibilityConverter"/>
         </ResourceDictionary>
     </Window.Resources>
-    <Controls:MetroWindow.WindowCommands>
+    <Controls:MetroWindow.RightWindowCommands>
         <Controls:WindowCommands Visibility="{Binding IsHelpVisible, Converter={StaticResource boolToVisibilityConverter}}">
             <Button Content="{Binding HelpButtonText}" cal:Message.Attach="OpenHelp"/>
         </Controls:WindowCommands>
-    </Controls:MetroWindow.WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
     <Grid Margin="5,0,5,5">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

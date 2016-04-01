@@ -6,7 +6,7 @@
     <Control.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colours.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml"/>
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml"/>
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml"/>
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml"/>
@@ -51,10 +51,9 @@
                 <TextBlock x:Name="Message"  DockPanel.Dock="Left" Text="Select items:" FontFamily="{DynamicResource HeaderFontFamily}" FontSize="{DynamicResource SubHeaderFontSize}"/>
             </DockPanel>
             <TextBox x:Name="FilterText" Visibility="{Binding FilterVisible,Converter={StaticResource boolToVisConv}}"
-            FontSize="{DynamicResource NormalFontSize}"
-            Controls:TextboxHelper.Watermark="{Binding FilterLabel}"
-            Controls:TextboxHelper.ClearTextButton="True" VerticalAlignment="Center"  Margin="0,5,2,15" 
-            
+                FontSize="{DynamicResource NormalFontSize}"
+                Controls:TextBoxHelper.Watermark="{Binding FilterLabel}"
+                Controls:TextBoxHelper.ClearTextButton="True" VerticalAlignment="Center"  Margin="0,5,2,15" 
             />
         </StackPanel>
 

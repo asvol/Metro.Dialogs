@@ -13,7 +13,7 @@
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colours.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
@@ -42,7 +42,7 @@
 
         <TextBlock x:Name="AppSubTitle" Text="ILS" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,10,0,0" FontSize="22" FontWeight="Light"/>
 
-        <Controls:ProgressIndicator  Grid.Row="2" Height="4" ProgressColour="{DynamicResource AccentColorBrush}" Margin="10,0"/>
+        <Controls:MetroProgressBar  Grid.Row="2" Height="4" Foreground="{DynamicResource AccentColorBrush}" Margin="10,0"/>
 
         <Polygon Height="30" Width="13" Points="0,0 0,2 1,1" Stretch="Fill" Grid.Row="1" Fill="#FF4C4C4F" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top"/>
 
